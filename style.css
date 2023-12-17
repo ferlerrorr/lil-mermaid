@@ -1,0 +1,195 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+  border: 1px solid #999999cc;
+  letter-spacing: 3px;
+  font-size: 9px;
+  line-height: 14px;
+  font-weight: 600;
+  margin: 0 50px 0 50px;
+  padding: 15px;
+  color: #dfddddee;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 38px;
+  text-align: center;
+  color: #dfddddee;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+  transition: transform 1s ease; /* Adjust the duration for a slower transition */
+}
+
+.horizontal-section {
+  width: 100vw;
+  min-height: 100vh;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  box-shadow: inset 0 0 0 1000px rgba(2, 34, 150, 0.482); /*Section Overlay for the Color Tempreture */
+}
+.prolouge {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.backdrop {
+  box-shadow: inset 0 0 0 1000px rgba(2, 34, 150, 0.701);
+}
+
+#section1 {
+  background-image: url(images/toast.webp);
+}
+
+#section2 {
+  background-image: url(images/16.jpg);
+}
+
+#section3 {
+  background-image: url(images/3.jpg);
+}
+
+#section4 {
+  background-image: url(images/4.jpg);
+}
+
+#section5 {
+  background-image: url(images/5.jpg);
+}
+
+#section6 {
+  background-image: url(images/6.jpg);
+}
+
+#section7 {
+  background-image: url(images/7.jpg);
+}
+
+#section8 {
+  background-image: url(images/9.webp);
+}
+
+#section9 {
+  background-image: url(images/17.jpg);
+}
+#section10 {
+  background-image: url(images/11.jpg);
+}
+
+#section11 {
+  background-image: url(images/12.jpg);
+}
+
+#section12 {
+  background-image: url(images/13.jpg);
+}
+
+#section13 {
+  background-image: url(images/14.jpg);
+}
+
+#section14 {
+  background-image: url(images/15.jpg);
+}
+
+#section15 {
+  background-image: url(images/3.jpg);
+}
+
+#section16 {
+  background-image: url(images/10.jpg);
+}
+
+#section17 {
+  background-image: url(images/1.jpg);
+}
+
+#section18 {
+  background-image: url(images/8.jpg);
+}
+
+.button-jittery button {
+  animation: jittery 4s infinite;
+}
+
+.button-jittery button:hover {
+  animation: heartbeat 0.2s infinite;
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.9);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 4px solid #dfddddee;
+  border-radius: 50%;
+  width: 180px; /* Set the width as needed */
+  height: 180px; /* Set the height as needed */
+  color: #dfddddee; /* Set text color to white */
+  cursor: pointer;
+  font-size: medium;
+  letter-spacing: 2px;
+}
+
+.section-container {
+  display: flex;
+  align-items: end;
+  height: 90%;
+}
